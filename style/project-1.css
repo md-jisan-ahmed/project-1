@@ -1,0 +1,280 @@
+
+
+/* for all text family style */
+* {
+    font-family: "Work Sans", sans-serif;
+}
+
+/* share style */
+.text-description{
+    color: gray;
+    line-height: 25px;
+}
+
+.btn-primary{
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 70px;
+    width: 180px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+/* header style */
+
+/* nav style */
+header{
+    background-color: antiquewhite;
+    padding: 50px 240px;
+    margin-bottom: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-title{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+nav > ul{
+    display: flex;
+    gap: 20px;
+}
+nav li{
+    list-style: none;
+    
+}
+nav li>a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    align-items: center;
+}
+
+/* banner style */
+.banner-content{
+    text-align: center;
+    max-width: 800px;
+    margin-left: 300px;
+}
+.banner-content h1{
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+.banner-img{
+    width: 100%;
+}
+
+
+/* main section */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* team section style */
+.team-section{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.team-content{
+    width: 100%;
+}
+.team-content p{
+    width: 480px;
+}
+.team-content h3{
+    font-size: 2.5rem;
+}
+
+/* feature section */
+.feature-section{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.feature-content h1{
+    border-left: 5px solid red;
+    padding-left: 20px;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+.feature-content div{
+    background-color: white;
+    width: 500px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.feature-img-container img {
+    height: 90%;
+    margin-left: 200px;
+}
+.experience{
+    background-color:orangered;
+    color: white;
+    width: 250px;
+    height: 150px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    bottom: 120px;
+    margin-left: 120px;
+}
+.experience h2{
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+}
+
+/* fact section */
+.fact-section{
+    margin-bottom: 150px;
+}
+.fact-section h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.fact-content{
+    width: 500px;
+}
+.fact-img-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.fact-img-container div{
+    border: 1px solid red;
+    padding: 30px;
+    text-align: center;
+}
+.fact-img-container div >h1{
+    font-size: 2.8rem;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.fact-img-container div > p{
+    margin-top: 0px;
+}
+
+/* sponsors-section */
+.sponsors-section{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.sponsors-section h2{
+    font-size: 2rem;
+}
+.sponsors-img-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+/* end main section */
+
+/* footer section */
+.footer-content{
+    text-align: center;
+    background-color: antiquewhite;
+    width: 1450px;
+    height: 55px;
+    margin-bottom: 100px;
+    margin-left: 220px;
+    padding: 10px;
+}
+
+/* reponsive  style*/
+/* media query */
+@media screen and (max-width:640px) {
+
+    header{
+        padding: 10px;
+    }
+    nav
+    {
+    flex-direction: column;
+    }
+    .banner-content{
+        width: 100%;
+        margin: 0px;
+    }
+    .team-section{
+        flex-direction: column;
+        margin: 10px;
+        
+    }
+    .team-img-container{
+        grid-template-columns:1fr;
+    }
+    .team-content, .team-content p{
+        width: 80%;
+    }
+    
+    .feature-section{
+        flex-direction: column;
+    }
+    .feature-content div{
+        width: 70%;
+    }
+    .feature-img-container img{
+        width: 90%;
+        margin: 10px;
+    }
+    .experience{
+        margin-left: 10px;
+    }
+
+    .fact-section{
+        margin: 20px;
+    }
+    .fact-content{
+        width: 50%;
+    }
+    .fact-img-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .fact-img-container div >img{
+        height: 100px;
+        width: 100px;
+        margin-left: 0px;
+    }
+    .sponsors-section{
+        margin-top: 50px;
+    }
+    .sponsors-img-container{
+        flex-direction: column;
+        gap: 40px;
+        width: 60%;
+        margin: 50px 200px;
+    }
+    .sponsors-img-container img{
+        height: 50%;
+        width: 50%;
+        
+    }
+    .footer-content{
+        width: 80%;
+        margin: 70px;
+    }
+}
+
